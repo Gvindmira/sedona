@@ -1,0 +1,239 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 100;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-navigation {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; 
+    margin: 0;
+}
+
+.site-navigation a {
+    display: block;
+    
+    font-weight: 700;
+    align-content: center;
+    color: #000000;
+}
+
+/* .intro {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    min-height: 730px;
+    margin:  0 auto;
+    margin-top: -30px;
+    padding: 0 auto;
+
+    background-image: url("img/intro.png");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.intro #sed1 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.intro p{
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+} */
+
+.intro {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    background-image: url("img/intro.png");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /* padding: 564px 350px  55px; */
+}
+
+.intro p {
+    display: block;
+    width: auto;
+mn                     
+    margin: 564px auto 55px;
+    padding: 0 auto;
+
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.advantages, .advantages-extra {
+    display: flex;
+    flex-flow: row nowrap;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-item {
+    display: inline-block;
+    width: 260px;
+    height: auto;
+
+    text-align: center;
+    padding: 46px 70px 80px;
+
+    background-color: #eeeeee;
+}
+
+.adv-item-special {
+    width: 304px;
+
+    padding: 48px 48px 83px;
+
+    background-color: #81b3d2;
+
+    color: #ffffff;
+}
+
+.advantages-extra li {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+
+    padding: 60px 60px 83px;
+    text-align: center;
+
+    background-color: #ffffff;    
+}
+
+
+
+.advantage-item h3 {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.advantage-item span {
+    position: relative;
+}
+
+.advantage-item span::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: -50%;
+
+    width: 9px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.advantage-item span::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: -50%;
+
+    width: 9px;
+    height: 2px;
+
+    background-color: #000000;    
+}
+
+.adv-item-special span::before,
+.adv-item-special span::after {
+    background-color: #ffffff;
+}
+
+
+
+/* .advantages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:  stretch;
+    width: 100%;
+    list-style: none;
+}
+
+.advantages li {
+    display: inline-block;
+
+    flex-basis: 400px;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.advantages li img {
+    display: inline-block;
+    flex-basis: 800px;
+    flex-grow: 1;
+} */
+
+/*чтобы поставить порядок строк как на макете*/
+/*.advantages .line-first {
+    order: -1;
+}
+*/
+/* .advantages-extra {
+    list-style: none;
+}
+
+.advantages-extra li {
+    display: inline-block;
+
+    order: -1;
+    flex-grow: 0;
+} */
