@@ -11,6 +11,7 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 a {
@@ -39,23 +40,25 @@ img {
 }
 
 .site-navigation {
-    list-style-type: none;
-
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap; 
     margin: 0;
+    padding: 0;
+
+    list-style-type: none;
 }
 
 .site-navigation a {
     display: block;
+    padding-bottom: 20px;
     
     font-weight: 700;
-    align-content: center;
     color: #000000;
 }
 
-/* .intro {
+.intro {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -64,18 +67,14 @@ img {
     width: 100%;
     min-height: 730px;
     margin:  0 auto;
-    margin-top: -30px;
+    margin-top: -20px;
     padding: 0 auto;
+    padding-bottom: 20px;
 
     background-image: url("img/intro.png");
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-.intro #sed1 {
-    font-weight: 700;
-    font-size: 16px;
 }
 
 .intro p{
@@ -83,29 +82,15 @@ img {
     vertical-align: center;
     text-align: center;
     margin: 0 auto;
-    padding: 15px;
-} */
+    padding: 0px 15px 38px;
 
-.intro {
-    display: block;
-
-    width: 100%;
-    height: auto;
-
-    background-image: url("img/intro.png");
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    /* padding: 564px 350px  55px; */
+    color: #333333;
 }
 
-.intro p {
-    display: block;
-    width: auto;
-mn                     
-    margin: 564px auto 55px;
-    padding: 0 auto;
-
+.intro #sed1 {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 58px;
 }
 
 .line {
@@ -154,8 +139,6 @@ mn
     background-color: #ffffff;    
 }
 
-
-
 .advantage-item h3 {
     font-weight: bold;
     font-size: 21px;
@@ -196,44 +179,217 @@ mn
     background-color: #ffffff;
 }
 
-
-
-/* .advantages {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content:  stretch;
+.hotels-sugestion {
+    box-sizing: border-box;
+    display: block;
+    background-color: #ffffff;
     width: 100%;
-    list-style: none;
-}
-
-.advantages li {
-    display: inline-block;
-
-    flex-basis: 400px;
+    height: 290px;
     text-align: center;
-    flex-grow: 0;
+    border: 1px solid #ffffff;
 }
 
-.advantages li img {
+.hotels-sugestion h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 55px auto 30px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 595px;
+    margin: 0 0;
+    padding: 0 0;
+    
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 0;
+}
+
+.footer-info {
+    position: absolute;
+    min-height: 120px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    /*background-color в rgba, чтобы потомки 
+    не наследовали opacity*/
+    background-color: rgba(256, 256, 256, 0.7);
+
+    z-index: 1;
+}
+
+.tag {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.social ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 150px;
+
+    list-style-type: none;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
+}
+
+.developed-by {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    min-width: 195px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.modal {
+    position: absolute;
+    width: 570px;
+    height: 484px;
+    right: 320px;
+    bottom: 200px;
+
+    background-color:#ffffff;
+}
+
+.modal h3 {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: #766357;
+    font-size: 21px;
+    color:  #ffffff;
+    font-weight: 700px;
+}
+
+.hotels-form {
+    display: block;
+    box-sizing: border-box;
+    margin: 55px;
+    padding: 0;
+}
+
+.hotel-visitors {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.hotels-form-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.hotel-visitors .hotels-form-item:first-child {
+    width: 227px;
+}
+
+.hotel-visitors .hotels-form-item:last-child {
+    width: 183px;
+}
+
+.hotel-dates label,
+.hotel-visitors label {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.hotel-dates input {
+    box-sizing: border-box;
+    width: 346px;
+    height: 40px;
+    padding-right: 40px;
+    background-image: url("svg/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 316px;
+
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.hotel-visitors input {
     display: inline-block;
-    flex-basis: 800px;
-    flex-grow: 1;
-} */
+    width: 115px;
+    height: 40px;
 
-/*чтобы поставить порядок строк как на макете*/
-/*.advantages .line-first {
-    order: -1;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: #f2f2f2;
+    border: none;
 }
-*/
-/* .advantages-extra {
-    list-style: none;
+
+.hotel-visitors input[type="number"]::-webkit-outer-spin-button,
+.hotel-visitors input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+} 
+
+.button {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background-color: #81b3d2;
+    border: none;
+    
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+
+    text-align: center;
+    vertical-align: center;
 }
-
-.advantages-extra li {
-    display: inline-block;
-
-    order: -1;
-    flex-grow: 0;
-} */
